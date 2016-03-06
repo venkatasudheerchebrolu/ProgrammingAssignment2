@@ -1,4 +1,5 @@
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) 
+{
         ## @x: a square invertible matrix
         ## return: a list containing functions to
         ##              1. set the matrix
@@ -20,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) 
+{
         ## @x: output of makeCacheMatrix()
         ## return: inverse of the original matrix input to makeCacheMatrix()
         
